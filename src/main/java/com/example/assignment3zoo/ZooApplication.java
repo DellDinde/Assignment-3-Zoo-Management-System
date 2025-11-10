@@ -1,4 +1,4 @@
-package Model;
+package com.example.assignment3zoo;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -7,12 +7,12 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class Enclosure extends Application {
+public class ZooApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Enclosure.class.getResource("enclosure-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(ZooApplication.class.getResource("composite-enclosure-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("E.g. Lions");
+        stage.setTitle("ZMS");
         stage.setScene(scene);
         stage.show();
     }
